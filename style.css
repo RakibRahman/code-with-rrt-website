@@ -1,74 +1,187 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    color: whitesmoke;
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url(img/bg.jpg);
+body {
+  color: whitesmoke;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url(img/bg.jpg);
 }
-/* Header and NAV */
-nav{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
+/*===============
+ Header and NAV
+ ================ */
+ header{
+     
+ }
+nav {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
-nav img{
-    width: 50px;
+nav img {
+  width: 50px;
 }
-.logo{
-    font-size: 2rem;
-    margin-left: 50px;
-    animation: show 1.5s linear 0s;
+.logo {
+  font-size: 2rem;
+  margin-left: 50px;
+  animation: show 1.5s linear 0s;
 }
-.menu{
-    margin-right: 50px;
-    animation: show 1.5s linear 0s;
+.menu {
+  margin-right: 50px;
+  animation: show 1.5s linear 0s;
+}
+.logo img,
+.logo span {
+  vertical-align: middle;
+}
+/* end of header */
+
+/* ===========
+.welcome
+============ */
+.welcome {
+  display: grid;
+  place-items: center;
+  margin-top: 120px;
+}
+.w1 {
+  margin-bottom: 50px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  line-height: 22px;
+}
+.w2 {
+  margin-bottom: 50px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 22px;
+}
+/* end of welcome */
+
+/*============
+ .wrapper 
+============*/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 180px 1fr 180px;
+  margin: 20px;
+}
+.content {
+  grid-column: 2;
+  min-width: 0;
+  display: flex;
+}
+/* iframe */
+.yt-frame {
+  background-image: url(img/bg2.jpg);
+  padding: 20px;
+  height: 380px;
+}
+
+iframe {
+  box-shadow: 10px 10px 10px crimson;
+}
+
+/* form */
+.form-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin-left: 70px;
+  width: 380px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signup-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-btn img {
+  width: 20px;
+}
+.btn1,
+.btn2 {
+  color: whitesmoke;
+  font-weight: bold;
+  width: 300px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 
 }
-.logo img,.logo span{
-    vertical-align: middle;
+.btn1 {
+  background-color: #1769ff;
+  margin-bottom: 10px;
 }
- /* end of header */
+.btn2 {
+  background-color: #36ade1;
+}
+.c-btn img {
+  margin-right: 10px;
+}
+.c-btn img,
+.c-btn span {
+  vertical-align: middle;
+}
+.c-btn:hover{
+    opacity: 85%;
+}
+.or {
+  text-align: center;
+  margin: 10px 0;
+}
+/* label and input */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+input {
+  width: 300px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: #45ce30;
+  font-size: 17px;
+}
+::placeholder{
+    color: darkgrey;
+}
+.signup {
+  width: 300px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  background: #45ce30;
+  color: whitesmoke;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.signup:hover{
+    opacity: 85%;
+}
+.agree {
+  color: darkgrey;
+  font-size: 12px;
+  text-align: center;
+}
 
 /*============ 
 Animations 
 ================*/
-@keyframes show{
-    from{
-       opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-} 
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
