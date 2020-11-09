@@ -13,9 +13,7 @@ body {
 /*===============
  Header and NAV
  ================ */
- header{
-     
- }
+
 nav {
   margin-top: 50px;
   display: flex;
@@ -68,7 +66,7 @@ nav img {
 .wrapper {
   display: grid;
   grid-template-columns: 180px 1fr 180px;
-  margin: 20px;
+  margin: 20px 0px;
 }
 .content {
   grid-column: 2;
@@ -173,6 +171,71 @@ input {
   font-size: 12px;
   text-align: center;
 }
+/* end of .wrapper */
+
+/*===================
+ RRT Promo section
+======================*/
+
+.rrt-promo{
+    margin-top:40px;
+    width: 100vw;
+    height: 85vh;
+    background-color: #192A56;
+}
+
+.rrt-promo .tagline{
+    padding: 20px 0;
+   text-align: center;
+}
+.tag{
+    color: #45ce30;
+    font-weight: bold;
+    cursor: pointer;
+}
+.introduction{
+display: grid;
+grid-gap: 20px;
+place-items: center;
+grid-auto-flow: column;
+}
+.intro{
+    width: 500px;
+}
+.intro img{
+    margin: 30px 10px;
+    width: 300px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  animation: show2 1.5s ease-in 2s;
+}
+.intro img:hover{
+    transform: translateY(-5px) scale(1.2);
+}
+.intro p{
+    line-height: 22px;
+    word-spacing: 2px;
+font-size: smaller;
+}
+.rrt-promo .price{
+    margin: 40px 0;
+}
+.rrt-promo .price p{
+    text-align: center;
+}
+/* end of rrt promo */
+
+/* ==========
+courses
+============ */
+
+
+
+
 
 /*============ 
 Animations 
@@ -185,3 +248,12 @@ Animations
     opacity: 1;
   }
 }
+@keyframes show2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
