@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +7,7 @@
 body {
   color: whitesmoke;
   font-size: 18px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Mulish', sans-serif;
   background-image: url(img/bg.jpg);
 }
 /*===============
@@ -346,6 +346,47 @@ margin-right: 5px;
   
 }
 /* end of courses */
+
+/* ==========
+Features
+============*/
+.features{
+  background: #333945;
+
+}
+.tagline3{
+  text-align: center;
+  padding-top: 20px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.container-a img{
+  width: 350px;
+}
+
+
+.container-b{
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+
+}
+.container-b-1,.container-b-2{
+  width:550px;
+}
+.container-a h3,.container-b h3{
+  font-size: 16px;
+  cursor: pointer;
+}
+.container-a p,.container-b p{
+  font-size: 14px;
+  line-height: 1.65;
+}
 
 /*==========
  footer
