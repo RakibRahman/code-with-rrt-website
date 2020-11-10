@@ -233,8 +233,6 @@ font-size: smaller;
 courses
 ============ */
 .courses{
-    /* margin-top:40px; */
-    margin-bottom: 40px;
     width: 100vw;
     height: 105vh;
     background-color: #3D0386;
@@ -347,6 +345,36 @@ margin-right: 5px;
   color: forestgreen;
   
 }
+/* end of courses */
+
+/*==========
+ footer
+============== */
+footer{
+  padding: 20px 0;
+  background: #333945;
+  display: grid;
+  place-items: center;
+}
+footer h2,h3{
+  margin: 10px 0;
+}
+address>*{
+  text-align: center;
+}
+footer .footer-img{
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+}
+footer .footer-img img{
+  width: 45px;
+cursor: pointer;
+}
+footer .footer-img img:hover{
+  animation: rotate 0.5s ease-in-out 0s;
+  filter: hue-rotate(90deg);
+}
 /*============ 
 Animations 
 ================*/
@@ -376,5 +404,9 @@ Animations
       opacity: 1;
     }
   }
-  
+  @keyframes rotate{
+    to{
+      transform: rotate(360deg) scale(1.2);
+    }
+  }
   
